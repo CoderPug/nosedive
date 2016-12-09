@@ -20,11 +20,28 @@ enum Sound: String {
 class ViewController: UIViewController {
     
     var audioPlayer = AVAudioPlayer()
+    var rateViewController: RateViewController?
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        
     }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
+        if segue.identifier == "showContainer" {
+            
+            guard let rateVC = segue.destination as? RateViewController else {
+                return
+            }
+
+            rateViewController = rateVC
+            rateViewController?.delegate = self
+        }
+    }
+    
+    //  MARK:
     
     func play(sound type: Sound) {
         
@@ -48,11 +65,17 @@ class ViewController: UIViewController {
         audioPlayer.prepareToPlay()
         audioPlayer.play()
     }
+
+}
+
+extension ViewController: RateViewControllerDelegate {
     
-    @IBAction func playSound() {
-     
+    func rateViewControllerDelegateStarsSelected(_ rateViewController: RateViewController, selectedStars: Int) {
+        
+        print(selectedStars)
+        
         play(sound: .five)
     }
-
+    
 }
 
