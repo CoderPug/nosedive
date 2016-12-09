@@ -17,6 +17,8 @@
 		C153075F1DFB034E0022AC42 /* nosedive_3_stars.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C153075A1DFB034E0022AC42 /* nosedive_3_stars.mp3 */; };
 		C15307601DFB034E0022AC42 /* nosedive_4_stars.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C153075B1DFB034E0022AC42 /* nosedive_4_stars.mp3 */; };
 		C15307611DFB034E0022AC42 /* nosedive_5_stars.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C153075C1DFB034E0022AC42 /* nosedive_5_stars.mp3 */; };
+		C15307641DFB09B50022AC42 /* RateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C15307621DFB09B50022AC42 /* RateViewController.swift */; };
+		C15307651DFB09B50022AC42 /* RateViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C15307631DFB09B50022AC42 /* RateViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +34,8 @@
 		C153075A1DFB034E0022AC42 /* nosedive_3_stars.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = nosedive_3_stars.mp3; sourceTree = "<group>"; };
 		C153075B1DFB034E0022AC42 /* nosedive_4_stars.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = nosedive_4_stars.mp3; sourceTree = "<group>"; };
 		C153075C1DFB034E0022AC42 /* nosedive_5_stars.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = nosedive_5_stars.mp3; sourceTree = "<group>"; };
+		C15307621DFB09B50022AC42 /* RateViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RateViewController.swift; path = ../RateViewController.swift; sourceTree = "<group>"; };
+		C15307631DFB09B50022AC42 /* RateViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = RateViewController.xib; path = ../RateViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +82,8 @@
 		C15307561DFB034E0022AC42 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				C15307621DFB09B50022AC42 /* RateViewController.swift */,
+				C15307631DFB09B50022AC42 /* RateViewController.xib */,
 				C15307571DFB034E0022AC42 /* Sounds */,
 			);
 			path = Resources;
@@ -155,6 +161,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C15307651DFB09B50022AC42 /* RateViewController.xib in Resources */,
 				C153075E1DFB034E0022AC42 /* nosedive_2_stars.mp3 in Resources */,
 				C15307601DFB034E0022AC42 /* nosedive_4_stars.mp3 in Resources */,
 				C153074F1DFB01A50022AC42 /* LaunchScreen.storyboard in Resources */,
@@ -173,6 +180,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C15307641DFB09B50022AC42 /* RateViewController.swift in Sources */,
 				C15307471DFB01A50022AC42 /* ViewController.swift in Sources */,
 				C15307451DFB01A50022AC42 /* AppDelegate.swift in Sources */,
 			);
