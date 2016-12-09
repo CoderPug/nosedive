@@ -24,20 +24,49 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="Ezp-b0-KCd">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
-                            <containerView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Zfd-XY-w37">
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Zfd-XY-w37">
                                 <rect key="frame" x="0.0" y="392" width="375" height="166"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="166" id="dt6-X6-fOX"/>
+                                </constraints>
                                 <connections>
                                     <segue destination="A0y-vI-lQ6" kind="embed" identifier="showContainer" id="0P7-0A-2ky"/>
                                 </connections>
                             </containerView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="coderpug" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="igN-6N-Sox">
+                                <rect key="frame" x="113" y="70" width="94.5" height="26.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <color key="textColor" red="0.36470588235294116" green="0.20784313725490194" blue="0.44313725490196076" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="4.2" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z8n-xr-e48">
+                                <rect key="frame" x="113" y="101.5" width="43" height="36"/>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="30"/>
+                                <color key="textColor" red="0.36470588235294116" green="0.20784313725490194" blue="0.44313725490196076" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="rate now" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aFr-T8-ttf">
+                                <rect key="frame" x="149.5" y="367" width="75.5" height="24"/>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="20"/>
+                                <color key="textColor" red="0.36470588240000001" green="0.20784313730000001" blue="0.4431372549" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="Zfd-XY-w37" firstAttribute="top" secondItem="aFr-T8-ttf" secondAttribute="bottom" constant="1" id="04V-Mn-Wzq"/>
+                            <constraint firstItem="Z8n-xr-e48" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="113" id="4E7-cI-sJp"/>
                             <constraint firstItem="Ezp-b0-KCd" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="6Ri-7g-E4P"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Ezp-b0-KCd" secondAttribute="bottom" id="BOZ-Jz-vuO"/>
+                            <constraint firstItem="igN-6N-Sox" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="50" id="CCR-et-NRY"/>
+                            <constraint firstAttribute="trailing" secondItem="Zfd-XY-w37" secondAttribute="trailing" id="PaN-rA-7fF"/>
+                            <constraint firstItem="Zfd-XY-w37" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="XSe-qN-ca3"/>
+                            <constraint firstItem="igN-6N-Sox" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="113" id="XXs-XY-rv7"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Zfd-XY-w37" secondAttribute="bottom" constant="109" id="YH0-1e-IJu"/>
                             <constraint firstAttribute="trailing" secondItem="Ezp-b0-KCd" secondAttribute="trailing" id="ci5-9b-ffs"/>
                             <constraint firstItem="Ezp-b0-KCd" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="gjN-we-k9d"/>
+                            <constraint firstItem="aFr-T8-ttf" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="jXU-Ju-d2e"/>
+                            <constraint firstItem="Z8n-xr-e48" firstAttribute="top" secondItem="igN-6N-Sox" secondAttribute="bottom" constant="5" id="k4r-K5-TvS"/>
                         </constraints>
                     </view>
                 </viewController>
