@@ -17,6 +17,8 @@ enum Sound: String {
     case five = "nosedive_5_stars"
 }
 
+let sounsRawValues = ["nosedive_1_star", "nosedive_2_stars", "nosedive_3_stars", "nosedive_4_stars", "nosedive_5_stars"]
+
 class ViewController: UIViewController {
     
     var audioPlayer = AVAudioPlayer()
@@ -72,9 +74,12 @@ extension ViewController: RateViewControllerDelegate {
     
     func rateViewControllerDelegateStarsSelected(_ rateViewController: RateViewController, selectedStars: Int) {
         
-        print(selectedStars)
+        guard selectedStars > 0 && selectedStars < 5,
+            let selection = Sound(rawValue: sounsRawValues[selectedStars]) else {
+                return
+        }
         
-        play(sound: .five)
+        play(sound: selection)
     }
     
 }

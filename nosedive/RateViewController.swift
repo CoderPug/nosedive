@@ -15,14 +15,15 @@ protocol RateViewControllerDelegate: class {
 
 class RateViewController: UIViewController {
 
+    let margin: CGFloat = 40
+    let stars: CGFloat = 5
+    
     var startPoint: CGPoint?
     var selectedStars: Int = 0
     weak var delegate: RateViewControllerDelegate?
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        self.view.backgroundColor = UIColor.blue
     }
 
 }
@@ -54,10 +55,9 @@ extension RateViewController {
             return
         }
         
-        let dif = point.x - startPoint.x
-        if (dif > 0) {
-            selectedStars = Int(dif / 50)
-        }
+        let dif = max(point.x - startPoint.x, 0)
+        let area = (view.frame.size.width - margin * 2) / stars
+        selectedStars = Int(dif / area)
         delegate?.rateViewControllerDelegateStarsSelected(self, selectedStars: selectedStars)
     }
 }
