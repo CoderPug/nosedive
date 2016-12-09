@@ -12,6 +12,11 @@
 		C153074A1DFB01A50022AC42 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C15307481DFB01A50022AC42 /* Main.storyboard */; };
 		C153074C1DFB01A50022AC42 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C153074B1DFB01A50022AC42 /* Assets.xcassets */; };
 		C153074F1DFB01A50022AC42 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C153074D1DFB01A50022AC42 /* LaunchScreen.storyboard */; };
+		C153075D1DFB034E0022AC42 /* nosedive_1_star.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C15307581DFB034E0022AC42 /* nosedive_1_star.mp3 */; };
+		C153075E1DFB034E0022AC42 /* nosedive_2_stars.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C15307591DFB034E0022AC42 /* nosedive_2_stars.mp3 */; };
+		C153075F1DFB034E0022AC42 /* nosedive_3_stars.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C153075A1DFB034E0022AC42 /* nosedive_3_stars.mp3 */; };
+		C15307601DFB034E0022AC42 /* nosedive_4_stars.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C153075B1DFB034E0022AC42 /* nosedive_4_stars.mp3 */; };
+		C15307611DFB034E0022AC42 /* nosedive_5_stars.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C153075C1DFB034E0022AC42 /* nosedive_5_stars.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +27,11 @@
 		C153074B1DFB01A50022AC42 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C153074E1DFB01A50022AC42 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C15307501DFB01A50022AC42 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C15307581DFB034E0022AC42 /* nosedive_1_star.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = nosedive_1_star.mp3; sourceTree = "<group>"; };
+		C15307591DFB034E0022AC42 /* nosedive_2_stars.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = nosedive_2_stars.mp3; sourceTree = "<group>"; };
+		C153075A1DFB034E0022AC42 /* nosedive_3_stars.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = nosedive_3_stars.mp3; sourceTree = "<group>"; };
+		C153075B1DFB034E0022AC42 /* nosedive_4_stars.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = nosedive_4_stars.mp3; sourceTree = "<group>"; };
+		C153075C1DFB034E0022AC42 /* nosedive_5_stars.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = nosedive_5_stars.mp3; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,12 +66,33 @@
 			children = (
 				C15307441DFB01A50022AC42 /* AppDelegate.swift */,
 				C15307461DFB01A50022AC42 /* ViewController.swift */,
-				C15307481DFB01A50022AC42 /* Main.storyboard */,
 				C153074B1DFB01A50022AC42 /* Assets.xcassets */,
+				C15307481DFB01A50022AC42 /* Main.storyboard */,
 				C153074D1DFB01A50022AC42 /* LaunchScreen.storyboard */,
+				C15307561DFB034E0022AC42 /* Resources */,
 				C15307501DFB01A50022AC42 /* Info.plist */,
 			);
 			path = nosedive;
+			sourceTree = "<group>";
+		};
+		C15307561DFB034E0022AC42 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				C15307571DFB034E0022AC42 /* Sounds */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		C15307571DFB034E0022AC42 /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+				C15307581DFB034E0022AC42 /* nosedive_1_star.mp3 */,
+				C15307591DFB034E0022AC42 /* nosedive_2_stars.mp3 */,
+				C153075A1DFB034E0022AC42 /* nosedive_3_stars.mp3 */,
+				C153075B1DFB034E0022AC42 /* nosedive_4_stars.mp3 */,
+				C153075C1DFB034E0022AC42 /* nosedive_5_stars.mp3 */,
+			);
+			path = Sounds;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -124,9 +155,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C153075E1DFB034E0022AC42 /* nosedive_2_stars.mp3 in Resources */,
+				C15307601DFB034E0022AC42 /* nosedive_4_stars.mp3 in Resources */,
 				C153074F1DFB01A50022AC42 /* LaunchScreen.storyboard in Resources */,
 				C153074C1DFB01A50022AC42 /* Assets.xcassets in Resources */,
+				C153075F1DFB034E0022AC42 /* nosedive_3_stars.mp3 in Resources */,
 				C153074A1DFB01A50022AC42 /* Main.storyboard in Resources */,
+				C153075D1DFB034E0022AC42 /* nosedive_1_star.mp3 in Resources */,
+				C15307611DFB034E0022AC42 /* nosedive_5_stars.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
